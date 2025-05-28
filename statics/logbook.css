@@ -1,0 +1,142 @@
+/* ===== Reset & Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+/* ===== Navigation ===== */
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #2c3e50;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* ===== Section: Intro ===== */
+.intro {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.intro h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* ===== Section: Download ===== */
+.Download {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.Download h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.Download h3 {
+    margin: 10px 0;
+}
+
+.download-link {
+    display: inline-block;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-link:hover {
+    background-color: #1a252f;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #555;
+    border-top: 1px solid #ccc;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    .intro, .Download {
+        padding: 15px;
+    }
+
+    .download-link {
+        width: 100%;
+        text-align: center;
+    }
+}
