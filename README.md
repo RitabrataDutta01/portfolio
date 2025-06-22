@@ -20,7 +20,7 @@ This is my personal portfolio website built using HTML and CSS. It showcases my 
 - HTML5
 - CSS3
 
-## Screenshot
+## Me :)
 ![screenshot](me.jpeg)
 
 ## Author
