@@ -1,27 +1,17 @@
-# Portfolio
+# Portfolio — Ritabrata Dutta
 
-This is my personal portfolio website built using HTML and CSS. It showcases my mini-projects including:
+Personal portfolio website built with React + Vite. Deployed via GitHub Pages.
 
-- PDF Tools (convert Word/Excel/PPT/Image to PDF)
-- Weather App
-- Expense Tracker
-- To-Do List
-- Logbook
+## Dev
 
-## Live Demo
-🔗 [Visit My Portfolio](https://ritabratadutta01.github.io/portfolio)
+```bash
+npm install
+npm run dev
+```
 
-## How to Run Locally
-1. Clone the repo
+## Deploy
 
-2. Open `index.html` in any browser.
-
-## Tech Stack
-- HTML5
-- CSS3
-
-## Me :)
-![screenshot](me.jpeg)
-
-## Author
-Ritabrata Dutta
+```bash
+npm run build
+npm run deploy
+```
