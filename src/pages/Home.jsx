@@ -56,9 +56,7 @@ export default function Home() {
                 I'm headed toward a Master's and a PhD. The goal is depth — whether that's in distributed systems,
                 security research, or machine learning theory.
               </p>
-              <p>
-                When I'm not coding, you'll find me on Arch Linux (Hyprland) or contributing to my GitHub.
-              </p>
+
             </div>
             <div className="about-skills">
               <h3>Skills & Tools</h3>

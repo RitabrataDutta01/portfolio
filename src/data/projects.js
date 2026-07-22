@@ -154,7 +154,7 @@ wp-gdrive-bot — Automates daily Google Drive folder creation and WhatsApp link
     description: `A Flask-based web application that brings the PDF conversion toolkit to the browser. Supports converting between Word, PDF, Excel, PowerPoint, and image formats. Built with a devcontainer setup for reproducible development environments.
 
 This is the web evolution of the original Tkinter-based PDF tools, demonstrating the same functionality delivered through a browser interface.`,
-    techStack: ['Python', 'Flask', 'HTML', 'CSS', 'Docker'],
+    techStack: ['Python', 'Flask', 'HTML', 'CSS'],
     features: [
       'Web-based PDF conversions',
       'Support for Word, Excel, PPT, Image formats',
@@ -198,8 +198,5 @@ export const skills = [
   { name: 'PostgreSQL', category: 'database' },
   { name: 'Supabase', category: 'database' },
 
-  { name: 'Docker', category: 'tool' },
   { name: 'Git', category: 'tool' },
-  { name: 'Arch Linux', category: 'os' },
-  { name: 'Hyprland', category: 'os' },
 ]
