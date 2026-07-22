@@ -47,6 +47,34 @@ The system includes role-specific views, attendance tracking with visual reports
     stars: 2,
   },
   {
+    id: 'breakpoint',
+    title: 'Breakpoint — Sentinel',
+    tagline: 'AI-Powered Workplace Simulation Platform',
+    category: 'web',
+    shortDesc: 'An AI-driven adaptive interviewer that simulates high-pressure professional conversations using a dynamic mood engine. Built for VibeForge 1.0 Hackathon.',
+    description: `Sentinel is an AI-powered workplace simulation platform designed to prepare users for high-stakes professional conversations. Unlike traditional interview tools that ask predefined questions, Sentinel simulates realistic workplace interactions by dynamically adapting its behavior based on user responses.
+
+Built for the VibeForge 1.0 Hackathon, the platform features a dynamic mood-engine AI interviewer that evaluates responses in real-time and shifts between emotional states (professional, skeptical, hostile, supportive, etc.) on a 1-10 scale. It supports 15+ scenarios including hostile termination, technical defense, PR crisis, and salary negotiation.
+
+I built the entire Flask backend — API routes, AI engine integration (Groq/Llama 3.3-70b), Supabase database and auth, spaCy-based NLP pipeline, scikit-learn toxicity model, and PDF report generation via WeasyPrint.`,
+    techStack: ['Python', 'Flask', 'PostgreSQL', 'Groq/Llama', 'spaCy', 'scikit-learn', 'Supabase', 'React', 'Tailwind CSS'],
+    features: [
+      'Dynamic mood-engine AI interviewer (1-10 scale)',
+      '15+ scenarios: hostile termination, PR crisis, technical defense, salary negotiation',
+      'Real-time adaptive responses based on answer quality',
+      'Detailed evaluation reports with PDF export via WeasyPrint',
+      'Supabase authentication + PostgreSQL database',
+      'spaCy NLP pipeline for response analysis',
+      'scikit-learn toxicity detection model',
+      'Built for VibeForge 1.0 Hackathon (63 commits)',
+    ],
+    githubUrl: 'https://github.com/Aditya0850/Breakpoint',
+    demoUrl: 'https://breakpoint-sgxh.onrender.com',
+    downloadUrl: null,
+    screenshot: null,
+    stars: 0,
+  },
+  {
     id: 'neetcode',
     title: 'NeetCode Submissions',
     tagline: 'DSA & Coding Interview Practice',
@@ -165,6 +193,11 @@ export const skills = [
   { name: 'Pandas', category: 'ml' },
   { name: 'scikit-learn', category: 'ml' },
   { name: 'Gemini API', category: 'ai' },
+  { name: 'Groq', category: 'ai' },
+  { name: 'spaCy', category: 'ml' },
+  { name: 'PostgreSQL', category: 'database' },
+  { name: 'Supabase', category: 'database' },
+  { name: 'Tailwind CSS', category: 'framework' },
   { name: 'Docker', category: 'tool' },
   { name: 'Git', category: 'tool' },
   { name: 'Arch Linux', category: 'os' },

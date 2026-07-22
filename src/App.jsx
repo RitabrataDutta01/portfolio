@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Crucible from './pages/Crucible'
 import VibeForge from './pages/VibeForge'
+import Breakpoint from './pages/Breakpoint'
 import NeetCode from './pages/NeetCode'
 import EDAProjects from './pages/EDAProjects'
 import PythonApps from './pages/PythonApps'
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/crucible" element={<Crucible />} />
           <Route path="/vibeforge" element={<VibeForge />} />
+          <Route path="/breakpoint" element={<Breakpoint />} />
           <Route path="/neetcode" element={<NeetCode />} />
           <Route path="/eda-projects" element={<EDAProjects />} />
           <Route path="/python-apps" element={<PythonApps />} />
