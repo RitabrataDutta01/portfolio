@@ -57,7 +57,7 @@ The system includes role-specific views, attendance tracking with visual reports
 Built for the VibeForge 1.0 Hackathon, the platform features a dynamic mood-engine AI interviewer that evaluates responses in real-time and shifts between emotional states (professional, skeptical, hostile, supportive, etc.) on a 1-10 scale. It supports 15+ scenarios including hostile termination, technical defense, PR crisis, and salary negotiation.
 
 I built the entire Flask backend — API routes, AI engine integration (Groq/Llama 3.3-70b), Supabase database and auth, spaCy-based NLP pipeline, scikit-learn toxicity model, and PDF report generation via WeasyPrint.`,
-    techStack: ['Python', 'Flask', 'PostgreSQL', 'Groq/Llama', 'spaCy', 'scikit-learn', 'Supabase', 'React', 'Tailwind CSS'],
+    techStack: ['Python', 'Flask', 'PostgreSQL', 'Groq/Llama', 'spaCy', 'scikit-learn', 'Supabase'],
     features: [
       'Dynamic mood-engine AI interviewer (1-10 scale)',
       '15+ scenarios: hostile termination, PR crisis, technical defense, salary negotiation',
@@ -197,7 +197,7 @@ export const skills = [
   { name: 'spaCy', category: 'ml' },
   { name: 'PostgreSQL', category: 'database' },
   { name: 'Supabase', category: 'database' },
-  { name: 'Tailwind CSS', category: 'framework' },
+
   { name: 'Docker', category: 'tool' },
   { name: 'Git', category: 'tool' },
   { name: 'Arch Linux', category: 'os' },
