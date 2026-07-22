@@ -1,10 +1,10 @@
 import { Link, useLocation } from 'react-router-dom'
 import './Nav.css'
 
-const navLinks = [
-  { path: '/', label: 'Home', section: true },
-  { path: '/', label: 'Projects', hash: '#projects', section: true },
-]
+function scrollTo(id) {
+  const el = document.getElementById(id)
+  if (el) el.scrollIntoView({ behavior: 'smooth' })
+}
 
 export default function Nav() {
   const location = useLocation()
@@ -17,23 +17,14 @@ export default function Nav() {
         <div className="nav-links">
           {isHome ? (
             <>
-              <a href="#about" className="nav-link">About</a>
-              <a href="#projects" className="nav-link">Projects</a>
-              <a href="#contact" className="nav-link">Contact</a>
+              <button className="nav-link" onClick={() => scrollTo('about')}>About</button>
+              <button className="nav-link" onClick={() => scrollTo('projects')}>Projects</button>
+              <button className="nav-link" onClick={() => scrollTo('contact')}>Contact</button>
             </>
           ) : (
             <>
               <Link to="/" className="nav-link">Home</Link>
-              <a
-                href={`${import.meta.env.BASE_URL}#/`}
-                className="nav-link"
-                onClick={(e) => {
-                  e.preventDefault()
-                  window.location.hash = '#/'
-                }}
-              >
-                Projects
-              </a>
+              <Link to="/" className="nav-link">Projects</Link>
             </>
           )}
         </div>

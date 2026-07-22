@@ -41,6 +41,10 @@
   font-size: 0.88rem;
   font-weight: 500;
   color: var(--text-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
   transition: all 0.2s;
 }
 

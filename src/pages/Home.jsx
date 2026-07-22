@@ -4,6 +4,11 @@ import ProjectCard from '../components/ProjectCard'
 import SkillBadge from '../components/SkillBadge'
 import './Home.css'
 
+function scrollTo(id) {
+  const el = document.getElementById(id)
+  if (el) el.scrollIntoView({ behavior: 'smooth' })
+}
+
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState('all')
 
@@ -13,7 +18,6 @@ export default function Home() {
 
   return (
     <div className="home">
-      {/* Hero */}
       <section className="hero">
         <div className="container hero-inner">
           <div className="hero-content">
@@ -25,8 +29,8 @@ export default function Home() {
               but because understanding the internals <em>is</em> the point.
             </p>
             <div className="hero-actions">
-              <a href="#projects" className="btn btn-primary">Explore My Work</a>
-              <a href="#contact" className="btn btn-outline">Get in Touch</a>
+              <button className="btn btn-primary" onClick={() => scrollTo('projects')}>Explore My Work</button>
+              <button className="btn btn-outline" onClick={() => scrollTo('contact')}>Get in Touch</button>
             </div>
           </div>
           <div className="hero-image">
@@ -37,7 +41,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About */}
       <section id="about" className="section">
         <div className="container">
           <h2 className="section-title">About Me</h2>
@@ -69,7 +72,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects */}
       <section id="projects" className="section">
         <div className="container">
           <h2 className="section-title">Projects</h2>
@@ -95,7 +97,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact */}
       <section id="contact" className="section">
         <div className="container">
           <div className="contact-card">
