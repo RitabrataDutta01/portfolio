@@ -166,12 +166,37 @@ This is the web evolution of the original Tkinter-based PDF tools, demonstrating
     screenshot: null,
     stars: 0,
   },
+  {
+    id: 'distkv',
+    title: 'distkv',
+    tagline: 'Distributed Key-Value Store in Go',
+    category: 'systems',
+    shortDesc: 'A concurrent, persistent key-value store with HTTP API built in Go — learning distributed systems from scratch.',
+    description: `distkv is a learning project built to understand distributed systems from first principles. Phase 1 (complete): a single-node, persistent key-value store with concurrent-safe operations via sync.RWMutex and crash-safe JSON snapshots. Organized into cleanly separated packages (store, server, cmd).
+
+Built with Go standard library only — no external dependencies. Planned phases include write-ahead log, leader-follower replication, and partitioning across nodes.`,
+    techStack: ['Go'],
+    features: [
+      'Get/Set/Delete operations via HTTP API (/{key})',
+      'Concurrent-safe with sync.RWMutex (shared reads, exclusive writes)',
+      'Crash-safe persistence via atomic JSON snapshots (temp file + rename)',
+      'Data survives restart — loaded from disk on startup',
+      'Organized into store/, server/, cmd/ packages',
+      'Phase 1 of multi-phase distributed systems learning project',
+    ],
+    githubUrl: 'https://github.com/RitabrataDutta01/distkv',
+    demoUrl: null,
+    downloadUrl: null,
+    screenshot: null,
+    stars: 0,
+  },
 ]
 
 export const categories = [
   { id: 'all', label: 'All Projects' },
   { id: 'security', label: 'Security' },
   { id: 'web', label: 'Full-Stack Web' },
+  { id: 'systems', label: 'Systems' },
   { id: 'desktop', label: 'Desktop Apps' },
   { id: 'ml', label: 'ML / Data' },
   { id: 'dsa', label: 'DSA' },

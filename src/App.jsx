@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Crucible from './pages/Crucible'
 import VibeForge from './pages/VibeForge'
 import Breakpoint from './pages/Breakpoint'
+import DistKV from './pages/DistKV'
 import NeetCode from './pages/NeetCode'
 import EDAProjects from './pages/EDAProjects'
 import PythonApps from './pages/PythonApps'
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/crucible" element={<Crucible />} />
           <Route path="/vibeforge" element={<VibeForge />} />
           <Route path="/breakpoint" element={<Breakpoint />} />
+          <Route path="/distkv" element={<DistKV />} />
           <Route path="/neetcode" element={<NeetCode />} />
           <Route path="/eda-projects" element={<EDAProjects />} />
           <Route path="/python-apps" element={<PythonApps />} />
